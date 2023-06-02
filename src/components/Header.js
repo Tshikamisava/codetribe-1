@@ -1,45 +1,17 @@
-import React from "react";
-import Carousel from 'carousel-react-rcdev'
-import { Link } from "react-router-dom";
-import "./styles.css"
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter, faSlack, faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-const Header = () => {
-    return (
-        <div className="content">
-            <div className="img">
-            <img src="https://reactjs.org/logo-og.png" alt="React Logo" />
-            </div>
-
-            <div className="about">
-                <h1 class="name">Why me</h1>
-                <p>The LaPerm is a breed of cat. A LaPerm's fur is curly,<br/> 
-                    with the tightest curls being on the throat <br/>and on the base of the ears.
-                     LaPerms come in many colors and patterns. <br/>
-                    LaPerms generally have a very affectionate personality</p><br/><br/>
-
-                    <p>The LaPerm is a breed of cat. A LaPerm's fur is curly,<br/> 
-                    with the tightest curls being on the throat <br/>and on the base of the ears.
-                     LaPerms come in many colors and patterns. <br/>
-                    LaPerms generally have a very affectionate personality</p>
-            </div>
-
-            <div className="button">
-            <button>schedule a call</button>
-            </div>
-
-            <div className="services">
-                <h1>Latest Work</h1>
-                <Carousel>
-            <img src='https://via.placeholder.com/150' alt='imagem' title='imagem' />
-            <img src='https://via.placeholder.com/150' alt='imagem' title='imagem' />
-            <img src='https://via.placeholder.com/150' alt='imagem' title='imagem' />
-            <img src='https://via.placeholder.com/150' alt='imagem' title='imagem' />
-            <img src='https://via.placeholder.com/150' alt='imagem' title='imagem' />
-    </Carousel>
-    <a href="">view all</a>
-            </div>
-      </div>
-   
-    )
+function Header() {
+  return (
+    <div className="social-links">
+      <a href="https://twitter.com/SophaBuso/"><FontAwesomeIcon icon={faTwitter} /></a>
+      <a href="https://app.slack.com/client/T04M928TTMF/C04ML3U7DJLom/"><FontAwesomeIcon icon={faSlack} /></a>
+      <a href="https://web.facebook.com/?_rdc=1&_rdr/"><FontAwesomeIcon icon={faFacebook} /></a>
+      <a href="https://github.com/sophakabuso"><FontAwesomeIcon icon={faGithub} /></a>
+      <a href="https://www.linkedin.com/in/sophakama-buso-2a9191103/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BeI%2FqN7XGSjOIIVcam21XIg%3D%3D"><FontAwesomeIcon icon={faLinkedin} /></a>
+    </div>
+  );
 }
-export default Header
+
+export default Header;

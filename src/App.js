@@ -24,7 +24,7 @@ const caption = 'Lucky';
 const images = [
   './img1.jpg',
   './logo192.png',
-  './logo512.jpg',
+  './logo512.png',
   
 ];
 

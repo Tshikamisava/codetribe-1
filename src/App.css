@@ -176,6 +176,8 @@
 }
 .view-all-button {
   border: none;
+  color: blue;
+  padding: 10px;
 }
 
 

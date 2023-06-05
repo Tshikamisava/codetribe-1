@@ -20,4 +20,4 @@ const LatestWork = ({ images }) => {
     );
   };
   
-  export default LatestWork;gint 
+  export default LatestWork;
